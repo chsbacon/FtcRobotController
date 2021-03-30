@@ -115,7 +115,7 @@ public class ExampleTeleOp extends LinearOpMode {
 
 
 
-            //here is how you call a function -- you can delete this
+            //here is how you call a function -- you can delete this.
             ExampleFunction();
 
 
