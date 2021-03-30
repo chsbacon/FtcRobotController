@@ -1,3 +1,10 @@
+
+//these are all your imports
+//they will auto generate when write something that needs and import
+// don't worry too much about these, they just look scary
+// you'll never actually touch them much
+// normally you just collapse them visually when you're editing code anyways
+
 package org.firstinspires.ftc.teamcode;
 
 import android.app.Activity;
@@ -28,15 +35,16 @@ import java.util.concurrent.TimeUnit;
 import java.util.Locale;
 
 
-//The "ExampleFile" is the file name that will show up on the phone
-// The group Opmode isn't needed, but its good measure to keep it
-@TeleOp(name = "ExampleFile", group = "Opmode")
+//The "ExampleFileOnPhone" is the file name that will show up on the phone
+// The group Opmode isn't needed, but its good measure to keep it -- just keep it
+@TeleOp(name = "ExampleFileOnPhone", group = "Opmode")
 
 //Make sure @Disabled is commented out, as if it is not commented, it will not show up on the phone
+//double check and make sure this is commented out, if it is uncommented, you're gonna have some trouble
 //@Disabled
 
 // this is where most of the code will go
-//the class name ExampleTeleOp should match the file name
+//the class name, in this case, ExampleTeleOp, should match the file name just with out the .java on the end
 // Extends LinearOpMode means the code will execute chronologically
 public class ExampleTeleOp extends LinearOpMode {
 
