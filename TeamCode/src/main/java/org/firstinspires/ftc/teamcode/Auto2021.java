@@ -209,10 +209,10 @@ public class Auto2021 extends LinearOpMode {
                 telemetry.addData("runTime:", (getRuntime()*1000)- timeVar);
                 telemetry.update();
             }
-            stopDriving(); 
+            stopDriving();
         }
         if ((task == fullRun) && (teamcolor == blue)) {
-            sleep(20000); 
+            sleep(20000);
             double timeVar = getRuntime()*1000;
             while ((getRuntime()*1000) - timeVar < 5200){
                 robot.backLeftMotor.setPower(-.5);
@@ -732,7 +732,6 @@ public class Auto2021 extends LinearOpMode {
     /*void wobbleUp() {
         robot.wobbleMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
     }
-
     void wobbleDown(){
         robot.wobbleMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
     } */
@@ -747,7 +746,7 @@ public class Auto2021 extends LinearOpMode {
     }
 
     void wobbleDrop() {
-       // wobbleDown();
+        // wobbleDown();
         wobbleOpen();
         telemetry.addData("Wobble goal delivered", 0);
         telemetry.update();
@@ -755,7 +754,7 @@ public class Auto2021 extends LinearOpMode {
 
     void wobbleRaise() {
         wobbleClose();
-       // wobbleUp();
+        // wobbleUp();
         telemetry.addData("Wobble goal up", 0);
         telemetry.update();
     }
@@ -888,11 +887,9 @@ public class Auto2021 extends LinearOpMode {
             runtime.reset();
             while (lastTime < noneForward) {
                 driveForward();
-
             }
             stopDriving();
         }
-
         if (ONE) {
             while (lastTime < oneTime) {
                 strafeRight(.5, robot.imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES));
@@ -903,8 +900,6 @@ public class Auto2021 extends LinearOpMode {
             }
             stopDriving();
         }
-
-
         if (FOUR) {
             while (lastTime < fourTime) {
                 strafeRight(.5, robot.imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES));

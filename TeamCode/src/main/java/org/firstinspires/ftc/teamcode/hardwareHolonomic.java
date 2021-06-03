@@ -25,7 +25,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  *
  *
  */
-public class Hardware_Shields_Holonomic
+public class hardwareHolonomic
 {
     /* Public OpMode members. */
     public DcMotor  frontLeftMotor   = null;
@@ -40,7 +40,7 @@ public class Hardware_Shields_Holonomic
 
 
     /* Constructor */
-    public Hardware_Shields_Holonomic(){
+    public hardwareHolonomic(){
 
 
     }
